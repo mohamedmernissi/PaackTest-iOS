@@ -10,13 +10,32 @@
 		3805BB65E2C3DD257B4B23E2 /* Pods_PaackTest_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F483DBF400BB63BE39751A /* Pods_PaackTest_iOSTests.framework */; };
 		A8036D4C25B85F2200188698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D4B25B85F2200188698 /* AppDelegate.swift */; };
 		A8036D4E25B85F2200188698 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D4D25B85F2200188698 /* SceneDelegate.swift */; };
-		A8036D5025B85F2200188698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D4F25B85F2200188698 /* ViewController.swift */; };
-		A8036D5325B85F2200188698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8036D5125B85F2200188698 /* Main.storyboard */; };
 		A8036D5525B85F2400188698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8036D5425B85F2400188698 /* Assets.xcassets */; };
 		A8036D5825B85F2400188698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8036D5625B85F2400188698 /* LaunchScreen.storyboard */; };
 		A8036D6325B85F2400188698 /* PaackTest_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D6225B85F2400188698 /* PaackTest_iOSTests.swift */; };
 		A8036D6E25B85F2400188698 /* PaackTest_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D6D25B85F2400188698 /* PaackTest_iOSUITests.swift */; };
 		A8036D9625B87D8D00188698 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D9525B87D8D00188698 /* Constants.swift */; };
+		A8036DB325B8907E00188698 /* DeliveriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAC25B8907E00188698 /* DeliveriesListPresenter.swift */; };
+		A8036DB425B8907E00188698 /* DeliveriesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAD25B8907E00188698 /* DeliveriesListRouter.swift */; };
+		A8036DB525B8907E00188698 /* DeliveriesListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAE25B8907E00188698 /* DeliveriesListContracts.swift */; };
+		A8036DB625B8907E00188698 /* DeliveriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAF25B8907E00188698 /* DeliveriesListInteractor.swift */; };
+		A8036DB725B8907E00188698 /* DeliveriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DB025B8907E00188698 /* DeliveriesListView.swift */; };
+		A8036DB825B8907E00188698 /* DeliveriesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8036DB125B8907E00188698 /* DeliveriesListView.xib */; };
+		A8036DB925B8907E00188698 /* DeliveriesListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DB225B8907E00188698 /* DeliveriesListEntity.swift */; };
+		A8036DC525B890BD00188698 /* DeliveryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DBE25B890BD00188698 /* DeliveryDetailsPresenter.swift */; };
+		A8036DC625B890BD00188698 /* DeliveryDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DBF25B890BD00188698 /* DeliveryDetailsRouter.swift */; };
+		A8036DC725B890BD00188698 /* DeliveryDetailsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC025B890BD00188698 /* DeliveryDetailsContracts.swift */; };
+		A8036DC825B890BD00188698 /* DeliveryDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC125B890BD00188698 /* DeliveryDetailsInteractor.swift */; };
+		A8036DC925B890BD00188698 /* DeliveryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC225B890BD00188698 /* DeliveryDetailsView.swift */; };
+		A8036DCA25B890BD00188698 /* DeliveryDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8036DC325B890BD00188698 /* DeliveryDetailsView.xib */; };
+		A8036DCB25B890BD00188698 /* DeliveryDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC425B890BD00188698 /* DeliveryDetailsEntity.swift */; };
+		A8036DD625B8936C00188698 /* DeliveryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DD425B8936C00188698 /* DeliveryListCell.swift */; };
+		A8036DD725B8936C00188698 /* DeliveryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8036DD525B8936C00188698 /* DeliveryListCell.xib */; };
+		A8036DDC25B895C900188698 /* Alamofire + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DDB25B895C900188698 /* Alamofire + Extensions.swift */; };
+		A8036DE125B895F300188698 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DE025B895F300188698 /* StringConstants.swift */; };
+		A8036DE625B8963600188698 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DE525B8963600188698 /* Reachability.swift */; };
+		A8036DEB25B8975900188698 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DEA25B8975900188698 /* Extensions.swift */; };
+		A8036DF025B897B800188698 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DEF25B897B800188698 /* UIViewController + Extensions.swift */; };
 		E3F4A1A385C0AD4A0251996B /* Pods_PaackTest_iOS_PaackTest_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ED502D904E4D45719D399E /* Pods_PaackTest_iOS_PaackTest_iOSUITests.framework */; };
 		F1D080418E314A2D7D84C2F7 /* Pods_PaackTest_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C68B79E03296DD13B2C59CE /* Pods_PaackTest_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -47,8 +66,6 @@
 		A8036D4825B85F2200188698 /* PaackTest-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaackTest-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8036D4B25B85F2200188698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8036D4D25B85F2200188698 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8036D4F25B85F2200188698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8036D5225B85F2200188698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8036D5425B85F2400188698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8036D5725B85F2400188698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8036D5925B85F2400188698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +76,27 @@
 		A8036D6D25B85F2400188698 /* PaackTest_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaackTest_iOSUITests.swift; sourceTree = "<group>"; };
 		A8036D6F25B85F2400188698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8036D9525B87D8D00188698 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A8036DAC25B8907E00188698 /* DeliveriesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesListPresenter.swift; sourceTree = "<group>"; };
+		A8036DAD25B8907E00188698 /* DeliveriesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesListRouter.swift; sourceTree = "<group>"; };
+		A8036DAE25B8907E00188698 /* DeliveriesListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesListContracts.swift; sourceTree = "<group>"; };
+		A8036DAF25B8907E00188698 /* DeliveriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesListInteractor.swift; sourceTree = "<group>"; };
+		A8036DB025B8907E00188698 /* DeliveriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesListView.swift; sourceTree = "<group>"; };
+		A8036DB125B8907E00188698 /* DeliveriesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveriesListView.xib; sourceTree = "<group>"; };
+		A8036DB225B8907E00188698 /* DeliveriesListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesListEntity.swift; sourceTree = "<group>"; };
+		A8036DBE25B890BD00188698 /* DeliveryDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsPresenter.swift; sourceTree = "<group>"; };
+		A8036DBF25B890BD00188698 /* DeliveryDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsRouter.swift; sourceTree = "<group>"; };
+		A8036DC025B890BD00188698 /* DeliveryDetailsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsContracts.swift; sourceTree = "<group>"; };
+		A8036DC125B890BD00188698 /* DeliveryDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsInteractor.swift; sourceTree = "<group>"; };
+		A8036DC225B890BD00188698 /* DeliveryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsView.swift; sourceTree = "<group>"; };
+		A8036DC325B890BD00188698 /* DeliveryDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryDetailsView.xib; sourceTree = "<group>"; };
+		A8036DC425B890BD00188698 /* DeliveryDetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsEntity.swift; sourceTree = "<group>"; };
+		A8036DD425B8936C00188698 /* DeliveryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListCell.swift; sourceTree = "<group>"; };
+		A8036DD525B8936C00188698 /* DeliveryListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryListCell.xib; sourceTree = "<group>"; };
+		A8036DDB25B895C900188698 /* Alamofire + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire + Extensions.swift"; sourceTree = "<group>"; };
+		A8036DE025B895F300188698 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		A8036DE525B8963600188698 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A8036DEA25B8975900188698 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A8036DEF25B897B800188698 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		BAC8A7127E29A218165FA75E /* Pods-PaackTest-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOSTests/Pods-PaackTest-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		E3F483DBF400BB63BE39751A /* Pods_PaackTest_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaackTest_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC753E81987E89E2A0F9672 /* Pods-PaackTest-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOS.release.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOS/Pods-PaackTest-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,10 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				A8036D9425B87D8000188698 /* Utils */,
+				A8036DAB25B8906500188698 /* Deliveries List */,
+				A8036DBD25B8909E00188698 /* Delivery Details */,
 				A8036D4B25B85F2200188698 /* AppDelegate.swift */,
 				A8036D4D25B85F2200188698 /* SceneDelegate.swift */,
-				A8036D4F25B85F2200188698 /* ViewController.swift */,
-				A8036D5125B85F2200188698 /* Main.storyboard */,
 				A8036D5425B85F2400188698 /* Assets.xcassets */,
 				A8036D5625B85F2400188698 /* LaunchScreen.storyboard */,
 				A8036D5925B85F2400188698 /* Info.plist */,
@@ -151,9 +189,60 @@
 		A8036D9425B87D8000188698 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A8036DEF25B897B800188698 /* UIViewController + Extensions.swift */,
+				A8036DDB25B895C900188698 /* Alamofire + Extensions.swift */,
 				A8036D9525B87D8D00188698 /* Constants.swift */,
+				A8036DE025B895F300188698 /* StringConstants.swift */,
+				A8036DE525B8963600188698 /* Reachability.swift */,
+				A8036DEA25B8975900188698 /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A8036DAB25B8906500188698 /* Deliveries List */ = {
+			isa = PBXGroup;
+			children = (
+				A8036DD225B8934300188698 /* Subviews */,
+				A8036DAC25B8907E00188698 /* DeliveriesListPresenter.swift */,
+				A8036DAD25B8907E00188698 /* DeliveriesListRouter.swift */,
+				A8036DAE25B8907E00188698 /* DeliveriesListContracts.swift */,
+				A8036DAF25B8907E00188698 /* DeliveriesListInteractor.swift */,
+				A8036DB025B8907E00188698 /* DeliveriesListView.swift */,
+				A8036DB125B8907E00188698 /* DeliveriesListView.xib */,
+				A8036DB225B8907E00188698 /* DeliveriesListEntity.swift */,
+			);
+			path = "Deliveries List";
+			sourceTree = "<group>";
+		};
+		A8036DBD25B8909E00188698 /* Delivery Details */ = {
+			isa = PBXGroup;
+			children = (
+				A8036DBE25B890BD00188698 /* DeliveryDetailsPresenter.swift */,
+				A8036DBF25B890BD00188698 /* DeliveryDetailsRouter.swift */,
+				A8036DC025B890BD00188698 /* DeliveryDetailsContracts.swift */,
+				A8036DC125B890BD00188698 /* DeliveryDetailsInteractor.swift */,
+				A8036DC225B890BD00188698 /* DeliveryDetailsView.swift */,
+				A8036DC325B890BD00188698 /* DeliveryDetailsView.xib */,
+				A8036DC425B890BD00188698 /* DeliveryDetailsEntity.swift */,
+			);
+			path = "Delivery Details";
+			sourceTree = "<group>";
+		};
+		A8036DD225B8934300188698 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A8036DD325B8934E00188698 /* DeliveryListCell */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A8036DD325B8934E00188698 /* DeliveryListCell */ = {
+			isa = PBXGroup;
+			children = (
+				A8036DD425B8936C00188698 /* DeliveryListCell.swift */,
+				A8036DD525B8936C00188698 /* DeliveryListCell.xib */,
+			);
+			path = DeliveryListCell;
 			sourceTree = "<group>";
 		};
 		CE37790BC76DB1137D149D76 /* Pods */ = {
@@ -288,8 +377,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8036D5825B85F2400188698 /* LaunchScreen.storyboard in Resources */,
+				A8036DCA25B890BD00188698 /* DeliveryDetailsView.xib in Resources */,
+				A8036DD725B8936C00188698 /* DeliveryListCell.xib in Resources */,
 				A8036D5525B85F2400188698 /* Assets.xcassets in Resources */,
-				A8036D5325B85F2200188698 /* Main.storyboard in Resources */,
+				A8036DB825B8907E00188698 /* DeliveriesListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,10 +508,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8036D5025B85F2200188698 /* ViewController.swift in Sources */,
+				A8036DB325B8907E00188698 /* DeliveriesListPresenter.swift in Sources */,
+				A8036DD625B8936C00188698 /* DeliveryListCell.swift in Sources */,
+				A8036DE625B8963600188698 /* Reachability.swift in Sources */,
+				A8036DE125B895F300188698 /* StringConstants.swift in Sources */,
+				A8036DDC25B895C900188698 /* Alamofire + Extensions.swift in Sources */,
+				A8036DCB25B890BD00188698 /* DeliveryDetailsEntity.swift in Sources */,
 				A8036D4C25B85F2200188698 /* AppDelegate.swift in Sources */,
+				A8036DC625B890BD00188698 /* DeliveryDetailsRouter.swift in Sources */,
 				A8036D4E25B85F2200188698 /* SceneDelegate.swift in Sources */,
+				A8036DC725B890BD00188698 /* DeliveryDetailsContracts.swift in Sources */,
+				A8036DF025B897B800188698 /* UIViewController + Extensions.swift in Sources */,
+				A8036DC825B890BD00188698 /* DeliveryDetailsInteractor.swift in Sources */,
+				A8036DB525B8907E00188698 /* DeliveriesListContracts.swift in Sources */,
 				A8036D9625B87D8D00188698 /* Constants.swift in Sources */,
+				A8036DC525B890BD00188698 /* DeliveryDetailsPresenter.swift in Sources */,
+				A8036DB925B8907E00188698 /* DeliveriesListEntity.swift in Sources */,
+				A8036DEB25B8975900188698 /* Extensions.swift in Sources */,
+				A8036DB425B8907E00188698 /* DeliveriesListRouter.swift in Sources */,
+				A8036DC925B890BD00188698 /* DeliveryDetailsView.swift in Sources */,
+				A8036DB725B8907E00188698 /* DeliveriesListView.swift in Sources */,
+				A8036DB625B8907E00188698 /* DeliveriesListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,14 +564,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A8036D5125B85F2200188698 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8036D5225B85F2200188698 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A8036D5625B85F2400188698 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

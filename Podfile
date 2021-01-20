@@ -7,6 +7,7 @@ target 'PaackTest-iOS' do
 
   # Pods for PaackTest-iOS
   pod 'Alamofire', '~> 5.2'
+  pod 'PromiseKit'
 
   target 'PaackTest-iOSTests' do
     inherit! :search_paths

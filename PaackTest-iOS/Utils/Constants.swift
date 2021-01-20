@@ -9,10 +9,10 @@ import Foundation
 
 struct URLConstants {
     private struct Domains {
-        static let REPO = "https://my-json-server.typicode.com/mohamedmernissi/PaackTest-iOS/"
+        static let BASEURL = "https://my-json-server.typicode.com/mohamedmernissi/PaackTest-iOS/"
     }
     
     static var getDeliveries: String {
-        return Domains.REPO + "deliveries"
+        return Domains.BASEURL + "deliveries"
     }
 }

@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-PaackTest-iOS-PaackTest-iOSUITests/Pods-PaackTest-iOS-PaackTest-iOSUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework
