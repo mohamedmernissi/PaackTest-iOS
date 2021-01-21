@@ -13,12 +13,20 @@ import UIKit
 struct DeliveryEntity: Codable {
     let id: Int?
     let address: String?
-    let latitude, longitude: Double?
+    let latitude: Double?
+    let longitude: Double?
     let customerName: String?
+    let requiresSignature: Bool?
+    let specialInstructions: String?
 
     enum CodingKeys: String, CodingKey {
-        case id, address, latitude, longitude
+        case id = "id"
+        case address = "address"
+        case latitude = "latitude"
+        case longitude = "longitude"
         case customerName = "customer_name"
+        case requiresSignature = "requires_signature"
+        case specialInstructions = "special_instructions"
     }
 }
 

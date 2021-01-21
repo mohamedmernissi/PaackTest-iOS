@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 //MARK: View -
 /*
@@ -18,22 +19,24 @@ import UIKit
 protocol DeliveryDetailsViewProtocol: class {
     // Update UI with value returned.
     /// Set the view Object of Type DeliveryDetailsEntity
+    func didGetDeliverySuccessfully(object : DeliveryEntity)
+    func didFailToGetDelivery(error : String)
 }
 
 //MARK: Interactor -
 /// DeliveryDetails Module Interactor Protocol
 protocol DeliveryDetailsInteractorProtocol {
-    // Fetch Object from Data Layer
+    // Fetch Object from API
+    func getDelivery(by id : Int) -> Promise<DeliveryEntity>
 }
 
 //MARK: Presenter -
 /// DeliveryDetails Module Presenter Protocol
 protocol DeliveryDetailsPresenterProtocol {
+    func getDelivery(by id : Int)
 }
 
 //MARK: Router (aka: Wireframe) -
 /// DeliveryDetails Module Router Protocol
 protocol DeliveryDetailsRouterProtocol {
-    // Show Details of Entity Object coming from ParentView Controller.
-    // func showDetailsFor(object: DeliveryDetailsEntity, parentViewController viewController: UIViewController)
 }
