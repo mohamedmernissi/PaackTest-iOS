@@ -1,2 +1,1 @@
-{"deliveries": [  {    "id": 1234,
-    "address": "Some address",    "latitude": 2.334455,    "longitude": 4.323423,    "customer_name": "Juan Pérez"  },  {    "id": 4567,    "address": "Some otheraddress",    "latitude": 2.3432167,    "longitude": 4.676453,    "customer_name": "MaríaCastro"  }]}
+{"deliveries": [  {    "id": 1234,    "address": "Some address",    "latitude": 2.334455,    "longitude": 4.323423,    "customer_name": "JuanPérez",    "requires_signature": false,    "special_instructions": "bluedoor, besides the car shop.Deliver to the car shop ifnecessary"  },  {    "id": 4567,    "address": "Some otheraddress",    "latitude": 2.3432167,    "longitude": 4.676453,    "customer_name": "MaríaCastro"  }]}
