@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 /// DeliveryDetails Module View
 class DeliveryDetailsView: UIViewController {
@@ -22,6 +23,8 @@ class DeliveryDetailsView: UIViewController {
     @IBOutlet weak var lblAddress: UILabel!
     @IBOutlet weak var lblInstructions: UILabel!
     @IBOutlet weak var lblRequireSignature: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
+    
     
     // MARK:  View lifecycle
     
@@ -46,6 +49,18 @@ class DeliveryDetailsView: UIViewController {
         lblInstructions.text = object.specialInstructions
         let requireSignature = object.requiresSignature ?? false
         lblRequireSignature.text = requireSignature ? "true" : "false"
+        if let latitude = object.latitude, let longitude = object.longitude{
+            let annotation = MKPointAnnotation()
+            let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+            let region = MKCoordinateRegion(center: coordinate, span: span)
+            annotation.coordinate = coordinate
+            mapView.setRegion(region, animated: true)
+            mapView.addAnnotation(annotation)
+        }
+        else{
+            self.mapView.isHidden = true
+        }
     }
     
     // MARK:  IBActions

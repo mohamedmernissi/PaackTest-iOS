@@ -15,6 +15,7 @@
                 <outlet property="lblInstructions" destination="9OK-s8-NCH" id="XGZ-P9-2XQ"/>
                 <outlet property="lblName" destination="gnP-ZN-4G9" id="VcH-hZ-ST9"/>
                 <outlet property="lblRequireSignature" destination="Z2D-oi-kic" id="eRB-u0-3k3"/>
+                <outlet property="mapView" destination="0b1-Ws-exC" id="eBn-VQ-RhJ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Oyt-Ei-jfd"/>
             </connections>
         </placeholder>
@@ -164,13 +165,32 @@
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="4RS-T6-DKd"/>
                     </constraints>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yT-d0-LSw">
+                    <rect key="frame" x="0.0" y="444" width="414" height="418"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0b1-Ws-exC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="418"/>
+                        </mapView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0b1-Ws-exC" secondAttribute="bottom" id="0pk-tk-tlz"/>
+                        <constraint firstItem="0b1-Ws-exC" firstAttribute="leading" secondItem="8yT-d0-LSw" secondAttribute="leading" id="2P8-Pr-PCt"/>
+                        <constraint firstAttribute="trailing" secondItem="0b1-Ws-exC" secondAttribute="trailing" id="WJs-T3-sfD"/>
+                        <constraint firstItem="0b1-Ws-exC" firstAttribute="top" secondItem="8yT-d0-LSw" secondAttribute="top" id="rpf-Jr-dhb"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8yT-d0-LSw" secondAttribute="bottom" id="3Hp-DJ-zqa"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jzz-xA-T9O" secondAttribute="trailing" id="KBl-Dk-xfH"/>
                 <constraint firstItem="Jzz-xA-T9O" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PuL-g7-qjV"/>
+                <constraint firstItem="8yT-d0-LSw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SyX-TQ-xuw"/>
                 <constraint firstItem="Jzz-xA-T9O" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Uhr-Ew-ls3"/>
+                <constraint firstItem="8yT-d0-LSw" firstAttribute="top" secondItem="Jzz-xA-T9O" secondAttribute="bottom" id="r3a-cP-m7g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8yT-d0-LSw" secondAttribute="trailing" id="vYw-QJ-G8P"/>
             </constraints>
             <point key="canvasLocation" x="35" y="42"/>
         </view>
