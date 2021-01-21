@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EB761E925B8A89600F12002 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB761E825B8A89600F12002 /* Router.swift */; };
 		3805BB65E2C3DD257B4B23E2 /* Pods_PaackTest_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F483DBF400BB63BE39751A /* Pods_PaackTest_iOSTests.framework */; };
 		A8036D4C25B85F2200188698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D4B25B85F2200188698 /* AppDelegate.swift */; };
 		A8036D5525B85F2400188698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8036D5425B85F2400188698 /* Assets.xcassets */; };
@@ -60,7 +59,6 @@
 /* Begin PBXFileReference section */
 		07CACBBAFFD405007F231A51 /* Pods-PaackTest-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOS.debug.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOS/Pods-PaackTest-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		0AA53BFB33BC5EB6CC5567D5 /* Pods-PaackTest-iOS-PaackTest-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOS-PaackTest-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOS-PaackTest-iOSUITests/Pods-PaackTest-iOS-PaackTest-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2EB761E825B8A89600F12002 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		34ED502D904E4D45719D399E /* Pods_PaackTest_iOS_PaackTest_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaackTest_iOS_PaackTest_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FC7FEA16D9878509478879 /* Pods-PaackTest-iOS-PaackTest-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOS-PaackTest-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOS-PaackTest-iOSUITests/Pods-PaackTest-iOS-PaackTest-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9C68B79E03296DD13B2C59CE /* Pods_PaackTest_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaackTest_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,7 +192,6 @@
 				A8036DE025B895F300188698 /* StringConstants.swift */,
 				A8036DE525B8963600188698 /* Reachability.swift */,
 				A8036DEA25B8975900188698 /* Extensions.swift */,
-				2EB761E825B8A89600F12002 /* Router.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -508,7 +505,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EB761E925B8A89600F12002 /* Router.swift in Sources */,
 				A8036DB325B8907E00188698 /* DeliveriesListPresenter.swift in Sources */,
 				A8036DD625B8936C00188698 /* DeliveryListCell.swift in Sources */,
 				A8036DE625B8963600188698 /* Reachability.swift in Sources */,

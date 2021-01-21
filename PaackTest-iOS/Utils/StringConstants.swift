@@ -8,6 +8,6 @@
 import Foundation
 
 struct StringsConstants {
-    static var ErrorMessageWs = "There's an error"
+    static var ErrorMessageWs = "There's an error fetching data from server"
     static var InternetError = "There's an internet error"
 }

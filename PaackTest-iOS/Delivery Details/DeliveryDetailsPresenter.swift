@@ -24,5 +24,11 @@ class DeliveryDetailsPresenter {
 
 // MARK: - extending DeliveryDetailsPresenter to implement it's protocol
 extension DeliveryDetailsPresenter: DeliveryDetailsPresenterProtocol {
-    
+    func getDelivery(by id: Int) {
+        self.interactor.getDelivery(by: id).done { (data) in
+            self._view?.didGetDeliverySuccessfully(object: data)
+        }.catch { (error) in
+            self._view?.didFailToGetDelivery(error: error.errorMessage)
+        }
+    }
 }
