@@ -38,8 +38,13 @@ extension DeliveriesListPresenter: DeliveriesListPresenterProtocol {
     func getDeliveries() {
         self.interactor.getDeliveries().done { (data) in
             self.deliveriesList = data
+            self._view?.didGetDeliveriesSuccessfully()
         }.catch { (error) in
             self._view?.didFailToGetDeliveries(error: error.errorMessage)
         }
+    }
+    
+    func showDetailsFor(object: DeliveryEntity, parentViewController viewController: UIViewController) {
+        self.wireframe.showDetailsFor(object: object, parentViewController: viewController)
     }
 }

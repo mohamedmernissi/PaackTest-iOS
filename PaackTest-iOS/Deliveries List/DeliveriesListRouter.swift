@@ -11,6 +11,8 @@ import UIKit
 /// DeliveriesList Module Router (aka: Wireframe)
 class DeliveriesListRouter: DeliveriesListRouterProtocol {
     func showDetailsFor(object: DeliveryEntity, parentViewController viewController: UIViewController) {
-        
+        let deliveryDetails = DeliveryDetailsView()
+        deliveryDetails.deliveryEntity = object
+        viewController.push(deliveryDetails)
     }
 }

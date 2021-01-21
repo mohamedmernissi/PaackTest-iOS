@@ -36,6 +36,7 @@ protocol DeliveriesListPresenterProtocol {
     func getDeliveries()
     func numberOfRows() -> Int
     func getDelivery(index : Int) -> DeliveryEntity?
+    func showDetailsFor(object: DeliveryEntity, parentViewController viewController: UIViewController)
 }
 
 //MARK: Router (aka: Wireframe) -

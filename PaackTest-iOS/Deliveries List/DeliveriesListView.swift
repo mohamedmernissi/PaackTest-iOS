@@ -30,7 +30,13 @@ class DeliveriesListView: UIViewController {
         presenter = DeliveriesListPresenter(view: self)
         
         // Informs the Presenter that the View is ready to receive data.
+        
+        // Header title
+        self.title = "Deliveries"
+        
         self.setupTableView()
+        self.presenter.getDeliveries()
+        
     }
     
     func setupTableView() {
@@ -52,6 +58,13 @@ extension DeliveriesListView: UITableViewDataSource,UITableViewDelegate {
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let delivery = self.presenter.getDelivery(index: indexPath.row){
+            self.presenter.showDetailsFor(object: delivery, parentViewController: self)
+        }
+    }
 }
 
 // MARK: - extending DeliveriesListView to implement it's protocol
@@ -63,6 +76,4 @@ extension DeliveriesListView: DeliveriesListViewProtocol {
     func didFailToGetDeliveries(error: String) {
         self.showAlert(message: error)
     }
-    
-    
 }

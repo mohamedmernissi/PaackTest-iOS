@@ -13,7 +13,7 @@ class DeliveryDetailsView: UIViewController {
     
     private var presenter: DeliveryDetailsPresenterProtocol!
     
-    private var object : DeliveryDetailsEntity?
+    var deliveryEntity : DeliveryEntity?
 
     
     override func viewDidLoad() {
