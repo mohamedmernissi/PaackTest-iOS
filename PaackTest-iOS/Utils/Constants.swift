@@ -15,4 +15,8 @@ struct URLConstants {
     static var getDeliveries: String {
         return Domains.BASEURL + "deliveries"
     }
+    
+    static var tracking: String {
+        return Domains.BASEURL + "tracking"
+    }
 }

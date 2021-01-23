@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // BatteryMonitoringEnabled to get battery level
+        UIDevice.current.isBatteryMonitoringEnabled = true
+        
         let navigationController = UINavigationController(rootViewController: DeliveriesListView())
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController

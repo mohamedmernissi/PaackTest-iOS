@@ -21,6 +21,9 @@ protocol DeliveryDetailsViewProtocol: class {
     /// Set the view Object of Type DeliveryDetailsEntity
     func didGetDeliverySuccessfully(object : DeliveryEntity)
     func didFailToGetDelivery(error : String)
+    
+    func didPostDataSuccessfully()
+    func didFailToPostData(error : String)
 }
 
 //MARK: Interactor -
@@ -28,12 +31,14 @@ protocol DeliveryDetailsViewProtocol: class {
 protocol DeliveryDetailsInteractorProtocol {
     // Fetch Object from API
     func getDelivery(by id : Int) -> Promise<DeliveryEntity>
+    func postData(trackingObject: TrackingObject) -> Promise<APIResponse>
 }
 
 //MARK: Presenter -
 /// DeliveryDetails Module Presenter Protocol
 protocol DeliveryDetailsPresenterProtocol {
     func getDelivery(by id : Int)
+    func postData(trackingObject: TrackingObject)
 }
 
 //MARK: Router (aka: Wireframe) -

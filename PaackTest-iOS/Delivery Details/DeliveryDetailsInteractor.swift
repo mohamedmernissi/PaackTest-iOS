@@ -18,4 +18,13 @@ class DeliveryDetailsInteractor: DeliveryDetailsInteractorProtocol {
         .validate()
         .responseCodable()
     }
+    
+    func postData(trackingObject: TrackingObject) -> Promise<APIResponse> {
+        let parameters : [String : Any] = ["driver_id":trackingObject.driverID!,"tracking_data":trackingObject.trackingData!]
+        let url = URLConstants.tracking
+        return AF.request(url,method: .post,parameters: parameters, encoding: URLEncoding.default)
+        .debugLog()
+        .validate()
+        .responseCodable()
+    }
 }

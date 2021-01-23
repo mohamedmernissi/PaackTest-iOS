@@ -31,4 +31,12 @@ extension DeliveryDetailsPresenter: DeliveryDetailsPresenterProtocol {
             self._view?.didFailToGetDelivery(error: error.errorMessage)
         }
     }
+    
+    func postData(trackingObject: TrackingObject) {
+        self.interactor.postData(trackingObject: trackingObject).done { (data) in
+            self._view?.didPostDataSuccessfully()
+        }.catch { (error) in
+            self._view?.didFailToPostData(error: error.errorMessage)
+        }
+    }
 }
