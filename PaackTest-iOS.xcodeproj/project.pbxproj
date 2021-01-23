@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EB761FB25BBAFF500F12002 /* DeliveryModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB761FA25BBAFF500F12002 /* DeliveryModuleTests.swift */; };
+		2EB7620225BBB03000F12002 /* DeliveryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DBE25B890BD00188698 /* DeliveryDetailsPresenter.swift */; };
+		2EB7620325BBB03000F12002 /* DeliveryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC225B890BD00188698 /* DeliveryDetailsView.swift */; };
+		2EB7620425BBB03000F12002 /* DeliveryDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DBF25B890BD00188698 /* DeliveryDetailsRouter.swift */; };
+		2EB7620525BBB03000F12002 /* DeliveryDetailsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC025B890BD00188698 /* DeliveryDetailsContracts.swift */; };
+		2EB7620625BBB03000F12002 /* DeliveryDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC125B890BD00188698 /* DeliveryDetailsInteractor.swift */; };
+		2EB7620725BBB03000F12002 /* DeliveryDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8036DC325B890BD00188698 /* DeliveryDetailsView.xib */; };
+		2EB7620825BBB03000F12002 /* DeliveryDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DC425B890BD00188698 /* DeliveryDetailsEntity.swift */; };
+		2EB7621225BBB41C00F12002 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DEF25B897B800188698 /* UIViewController + Extensions.swift */; };
+		2EB7621325BBB41C00F12002 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DE525B8963600188698 /* Reachability.swift */; };
+		2EB7621425BBB41C00F12002 /* Alamofire + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DDB25B895C900188698 /* Alamofire + Extensions.swift */; };
+		2EB7621525BBB41C00F12002 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DE025B895F300188698 /* StringConstants.swift */; };
+		2EB7621625BBB41C00F12002 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DEA25B8975900188698 /* Extensions.swift */; };
+		2EB7621725BBB41C00F12002 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D9525B87D8D00188698 /* Constants.swift */; };
+		2EB7621B25BBB42400F12002 /* DeliveriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAC25B8907E00188698 /* DeliveriesListPresenter.swift */; };
+		2EB7621C25BBB42400F12002 /* DeliveriesListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAE25B8907E00188698 /* DeliveriesListContracts.swift */; };
+		2EB7621D25BBB42400F12002 /* DeliveriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAF25B8907E00188698 /* DeliveriesListInteractor.swift */; };
+		2EB7621E25BBB42400F12002 /* DeliveriesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8036DB125B8907E00188698 /* DeliveriesListView.xib */; };
+		2EB7621F25BBB42400F12002 /* DeliveriesListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DB225B8907E00188698 /* DeliveriesListEntity.swift */; };
+		2EB7622025BBB42400F12002 /* DeliveriesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DAD25B8907E00188698 /* DeliveriesListRouter.swift */; };
+		2EB7622125BBB42400F12002 /* DeliveriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DB025B8907E00188698 /* DeliveriesListView.swift */; };
+		2EB7622525BBB42B00F12002 /* DeliveryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036DD425B8936C00188698 /* DeliveryListCell.swift */; };
+		2EB7622625BBB42B00F12002 /* DeliveryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8036DD525B8936C00188698 /* DeliveryListCell.xib */; };
 		3805BB65E2C3DD257B4B23E2 /* Pods_PaackTest_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F483DBF400BB63BE39751A /* Pods_PaackTest_iOSTests.framework */; };
 		A8036D4C25B85F2200188698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8036D4B25B85F2200188698 /* AppDelegate.swift */; };
 		A8036D5525B85F2400188698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8036D5425B85F2400188698 /* Assets.xcassets */; };
@@ -59,6 +82,7 @@
 /* Begin PBXFileReference section */
 		07CACBBAFFD405007F231A51 /* Pods-PaackTest-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOS.debug.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOS/Pods-PaackTest-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		0AA53BFB33BC5EB6CC5567D5 /* Pods-PaackTest-iOS-PaackTest-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOS-PaackTest-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOS-PaackTest-iOSUITests/Pods-PaackTest-iOS-PaackTest-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB761FA25BBAFF500F12002 /* DeliveryModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryModuleTests.swift; sourceTree = "<group>"; };
 		34ED502D904E4D45719D399E /* Pods_PaackTest_iOS_PaackTest_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaackTest_iOS_PaackTest_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FC7FEA16D9878509478879 /* Pods-PaackTest-iOS-PaackTest-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaackTest-iOS-PaackTest-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-PaackTest-iOS-PaackTest-iOSUITests/Pods-PaackTest-iOS-PaackTest-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9C68B79E03296DD13B2C59CE /* Pods_PaackTest_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaackTest_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +153,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EB761F925BBAFC600F12002 /* DeliveryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2EB761FA25BBAFF500F12002 /* DeliveryModuleTests.swift */,
+			);
+			path = DeliveryDetails;
+			sourceTree = "<group>";
+		};
 		A8036D3F25B85F2200188698 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +200,7 @@
 		A8036D6125B85F2400188698 /* PaackTest-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				2EB761F925BBAFC600F12002 /* DeliveryDetails */,
 				A8036D6225B85F2400188698 /* PaackTest_iOSTests.swift */,
 				A8036D6425B85F2400188698 /* Info.plist */,
 			);
@@ -385,6 +418,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB7621E25BBB42400F12002 /* DeliveriesListView.xib in Resources */,
+				2EB7622625BBB42B00F12002 /* DeliveryListCell.xib in Resources */,
+				2EB7620725BBB03000F12002 /* DeliveryDetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +569,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8036D6325B85F2400188698 /* PaackTest_iOSTests.swift in Sources */,
+				2EB7621C25BBB42400F12002 /* DeliveriesListContracts.swift in Sources */,
+				2EB7622125BBB42400F12002 /* DeliveriesListView.swift in Sources */,
+				2EB7621225BBB41C00F12002 /* UIViewController + Extensions.swift in Sources */,
+				2EB7620425BBB03000F12002 /* DeliveryDetailsRouter.swift in Sources */,
+				2EB7620325BBB03000F12002 /* DeliveryDetailsView.swift in Sources */,
+				2EB761FB25BBAFF500F12002 /* DeliveryModuleTests.swift in Sources */,
+				2EB7621425BBB41C00F12002 /* Alamofire + Extensions.swift in Sources */,
+				2EB7621D25BBB42400F12002 /* DeliveriesListInteractor.swift in Sources */,
+				2EB7620525BBB03000F12002 /* DeliveryDetailsContracts.swift in Sources */,
+				2EB7620825BBB03000F12002 /* DeliveryDetailsEntity.swift in Sources */,
+				2EB7621625BBB41C00F12002 /* Extensions.swift in Sources */,
+				2EB7621525BBB41C00F12002 /* StringConstants.swift in Sources */,
+				2EB7620625BBB03000F12002 /* DeliveryDetailsInteractor.swift in Sources */,
+				2EB7621725BBB41C00F12002 /* Constants.swift in Sources */,
+				2EB7621F25BBB42400F12002 /* DeliveriesListEntity.swift in Sources */,
+				2EB7622525BBB42B00F12002 /* DeliveryListCell.swift in Sources */,
+				2EB7621B25BBB42400F12002 /* DeliveriesListPresenter.swift in Sources */,
+				2EB7622025BBB42400F12002 /* DeliveriesListRouter.swift in Sources */,
+				2EB7621325BBB41C00F12002 /* Reachability.swift in Sources */,
+				2EB7620225BBB03000F12002 /* DeliveryDetailsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -677,7 +733,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

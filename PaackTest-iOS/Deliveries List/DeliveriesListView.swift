@@ -35,6 +35,8 @@ class DeliveriesListView: UIViewController {
         self.title = "Deliveries"
         
         self.setupTableView()
+        
+        // fetch deliveries
         self.presenter.getDeliveries()
         
     }
@@ -54,6 +56,7 @@ extension DeliveriesListView: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DeliveryListCellIdentifier, for: indexPath) as! DeliveryListCell
         if let delivery = self.presenter.getDelivery(index: indexPath.row){
+            // setup cell with fetched object
             cell.setup(with: delivery)
         }
         return cell
@@ -62,6 +65,7 @@ extension DeliveriesListView: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if let delivery = self.presenter.getDelivery(index: indexPath.row){
+            // show details screen and passing object to use the id to get it's details
             self.presenter.showDetailsFor(object: delivery, parentViewController: self)
         }
     }

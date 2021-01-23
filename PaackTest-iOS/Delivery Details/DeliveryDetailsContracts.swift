@@ -39,6 +39,7 @@ protocol DeliveryDetailsInteractorProtocol {
 protocol DeliveryDetailsPresenterProtocol {
     func getDelivery(by id : Int)
     func postData(trackingObject: TrackingObject)
+    func getElapsedTime(date : Date?) -> Int
 }
 
 //MARK: Router (aka: Wireframe) -

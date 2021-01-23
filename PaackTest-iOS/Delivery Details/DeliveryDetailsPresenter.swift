@@ -39,4 +39,12 @@ extension DeliveryDetailsPresenter: DeliveryDetailsPresenterProtocol {
             self._view?.didFailToPostData(error: error.errorMessage)
         }
     }
+    
+    func getElapsedTime(date : Date?) -> Int {
+        // get time intercal from start date to current date
+        guard let timeInterval = date?.timeIntervalSinceNow else { return 0 }
+        // convert to Integer
+        let timeIntervalInt = -(Int(timeInterval))
+        return timeIntervalInt
+    }
 }

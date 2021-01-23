@@ -36,7 +36,6 @@ class DeliveryDetailsView: UIViewController {
         return formatter
     }
     private var startDate: Date?
-    private var timeIntervalStart : Int?
    
     //Hardcoded value for driver id since there's no user data
     private var driverId = Int.random(in: 0...99)
@@ -75,6 +74,7 @@ class DeliveryDetailsView: UIViewController {
         let requireSignature = object.requiresSignature ?? false
         lblRequireSignature.text = requireSignature ? "true" : "false"
         if let latitude = object.latitude, let longitude = object.longitude{
+            // Add pin on map to show the delivery address on the map
             let annotation = MKPointAnnotation()
             let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
@@ -91,10 +91,12 @@ class DeliveryDetailsView: UIViewController {
     // MARK:  IBActions
     @IBAction func didMakeItActive(_ sender: UISwitch) {
         if sender.isOn{
+            // start tracking the driver using corelocation functionnalities
             self.startTracking()
         }
         else{
             locationManager = nil
+            self.clearData()
         }
     }
     
@@ -116,18 +118,22 @@ class DeliveryDetailsView: UIViewController {
         }
     }
     
+    func clearData(){
+        // clear old data after posting tracking data to the server
+        self.trackingDataArray.removeAll()
+        self.startDate = nil
+    }
+    
 }
 
 // MARK: - extending DeliveryDetailsView to implement it's protocol
 extension DeliveryDetailsView: DeliveryDetailsViewProtocol {
     func didPostDataSuccessfully() {
-        self.trackingDataArray.removeAll()
-        self.startDate = nil
+        self.clearData()
     }
     
     func didFailToPostData(error: String) {
-        self.trackingDataArray.removeAll()
-        self.startDate = nil
+        self.clearData()
     }
     
     func didGetDeliverySuccessfully(object: DeliveryEntity) {
@@ -147,28 +153,19 @@ extension DeliveryDetailsView : CLLocationManagerDelegate{
         if startDate == nil{
             startDate = Date()
         }
-        if timeIntervalStart == nil{
-            timeIntervalStart = Int(Date().timeIntervalSince1970)
-        }
-        
-        // get time intercal from start date to current date
-        guard let timeInterval = startDate?.timeIntervalSinceNow else { return }
         
         // timestamp for the collected data
         guard let timeStamp = startDate?.timeIntervalSince1970 else { return }
-        
-        // convert to Integer
-        let timeIntervalInt = -(Int(timeInterval))
-        
         let timeStampInt = Int(timeStamp)
         
         let trackingData = TrackingData(latitude: lat, longitude: lon, deliveryID: self.deliveryEntity?.id!, batteryLevel: batteryLevel, timestamp: timeStampInt)
         
-        print("timeInterval: ",timeIntervalInt)
         trackingDataArray.append(trackingData)
-        
+        let elapsedTime = self.presenter.getElapsedTime(date: startDate)
+        print("timeInterval: ",elapsedTime)
+
         //if 10 seconds is elapsed, the data is posted and the counter is reset
-        if timeIntervalInt >= 10{
+        if elapsedTime >= 10{
             let trackingObject = TrackingObject(driverID: self.driverId, trackingData: trackingDataArray)
             self.presenter.postData(trackingObject: trackingObject)
         }
