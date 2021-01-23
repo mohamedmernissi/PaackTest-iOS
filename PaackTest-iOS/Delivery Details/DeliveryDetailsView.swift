@@ -171,7 +171,6 @@ extension DeliveryDetailsView : CLLocationManagerDelegate{
         if timeIntervalInt >= 10{
             let trackingObject = TrackingObject(driverID: self.driverId, trackingData: trackingDataArray)
             self.presenter.postData(trackingObject: trackingObject)
-            print("timeInterval10: ",timeIntervalInt)
         }
 
     }
